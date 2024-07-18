@@ -1,0 +1,279 @@
+
+using System;
+using System.Collections.Generic;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Bienvenido a la sección de personalización de su personaje");
+        List<string> personalizacion = new List<string>();
+        // Sistema de personalización de los aspectos faciales del personaje
+        Console.WriteLine("\nElige las características faciales de tu personaje:\n1. Nariz chata\n2. Nariz respingosa\n3. Nariz pronunciada");
+        string nariz = Console.ReadLine();
+        switch (nariz)
+        {
+            case "1":
+                personalizacion.Add("Nariz chata");
+                break;
+            case "2":
+                personalizacion.Add("Nariz respingosa");
+                break;
+            case "3":
+                personalizacion.Add("Nariz pronunciada");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de personalización del color de ojos del personaje
+        Console.WriteLine("\nElige el color de los ojos de tu personaje:\n1. Azul\n2. Verde\n3. Marrón\n4. Negro");
+        string ojos = Console.ReadLine();
+        switch (ojos)
+        {
+            case "1":
+                personalizacion.Add("Ojos azules");
+                break;
+            case "2":
+                personalizacion.Add("Ojos verdes");
+                break;
+            case "3":
+                personalizacion.Add("Ojos marrones");
+                break;
+            case "4":
+                personalizacion.Add("Ojos negros");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección del tipo de cuerpo del personaje
+        Console.WriteLine("\nElige el tipo de cuerpo de tu personaje:\n1. Flaco\n2. Promedio\n3. Musculoso\n4. Mamado");
+        string cuerpo = Console.ReadLine();
+        switch (cuerpo)
+        {
+            case "1":
+                personalizacion.Add("Cuerpo flaco");
+                break;
+            case "2":
+                personalizacion.Add("Cuerpo promedio");
+                break;
+            case "3":
+                personalizacion.Add("Cuerpo musculoso");
+                break;
+            case "4":
+                personalizacion.Add("Cuerpo mamado");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección del tipo de armadura para el personaje base
+        Console.WriteLine("\nElige la armadura de tu personaje:\n1. Escamas de dragón\n2. Armadura de cuero\n3. Armadura de acero\n4. Armadura romana");
+        string armadura = Console.ReadLine();
+        switch (armadura)
+        {
+            case "1":
+                personalizacion.Add("Armadura de escamas de dragón");
+                break;
+            case "2":
+                personalizacion.Add("Armadura de cuero");
+                break;
+            case "3":
+                personalizacion.Add("Armadura de acero");
+                break;
+            case "4":
+                personalizacion.Add("Armadura romana");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección del arma del personaje
+        Console.WriteLine("\nElige el tipo de arma de tu personaje:\n1. Espada\n2. Arco\n3. Hacha\n4. Ballesta\n5. Puño limpio\n6. Flecha normal\n7. Flecha encantada\n8. Flecha venenosa");
+        string arma = Console.ReadLine();
+        switch (arma)
+        {
+            case "1":
+                personalizacion.Add("Espada");
+                break;
+            case "2":
+                personalizacion.Add("Arco");
+                break;
+            case "3":
+                personalizacion.Add("Hacha");
+                break;
+            case "4":
+                personalizacion.Add("Ballesta");
+                break;
+            case "5":
+                personalizacion.Add("Puño limpio");
+                break;
+            case "6":
+                personalizacion.Add("Flecha normal");
+                break;
+            case "7":
+                personalizacion.Add("Flecha encantada");
+                break;
+            case "8":
+                personalizacion.Add("Flecha venenosa");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección de raza del personaje
+        Console.WriteLine("\nElige la raza de tu personaje:\n1. Dios\n2. Elfo\n3. Enano\n4. Mestizo\n5. Afrodescendiente\n6. Descendencia asiática\n7. Descendencia occidental");
+        string raza = Console.ReadLine();
+        switch (raza)
+        {
+            case "1":
+                personalizacion.Add("Dios");
+                break;
+            case "2":
+                personalizacion.Add("Elfo");
+                break;
+            case "3":
+                personalizacion.Add("Enano");
+                break;
+            case "4":
+                personalizacion.Add("Mestizo");
+                break;
+            case "5":
+                personalizacion.Add("Afrodescendiente");
+                break;
+            case "6":
+                personalizacion.Add("Descendencia asiática");
+                break;
+            case "7":
+                personalizacion.Add("Descendencia occidental");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección del color de cabello del personaje
+        Console.WriteLine("\nElige el color del cabello de tu personaje:\n1. Negro\n2. Marrón\n3. Rubio\n4. Pelirrojo\n5. Blanco\n6. Tornasol");
+        string cabello = Console.ReadLine();
+        switch (cabello)
+        {
+            case "1":
+                personalizacion.Add("Cabello negro");
+                break;
+            case "2":
+                personalizacion.Add("Cabello marrón");
+                break;
+            case "3":
+                personalizacion.Add("Cabello rubio");
+                break;
+            case "4":
+                personalizacion.Add("Cabello pelirrojo");
+                break;
+            case "5":
+                personalizacion.Add("Cabello blanco");
+                break;
+            case "6":
+                personalizacion.Add("Cabello tornasol");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección para el tipo de ropa del personaje
+        Console.WriteLine("\nElige el tipo de vestimenta de tu personaje:\n1. Pantalón largo\n2. Pantaloneta\n3. Falda\n4. Camiseta\n5. Chaqueta\n6. Manga corta\n7. Manga larga\n8. Sin manga");
+        string vestimenta = Console.ReadLine();
+        switch (vestimenta)
+        {
+            case "1":
+                personalizacion.Add("Pantalón largo");
+                break;
+            case "2":
+                personalizacion.Add("Pantaloneta");
+                break;
+            case "3":
+                personalizacion.Add("Falda");
+                break;
+            case "4":
+                personalizacion.Add("Camiseta");
+                break;
+            case "5":
+                personalizacion.Add("Chaqueta");
+                break;
+            case "6":
+                personalizacion.Add("Manga corta");
+                break;
+            case "7":
+                personalizacion.Add("Manga larga");
+                break;
+            case "8":
+                personalizacion.Add("Sin manga");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección del elemento del personaje
+        Console.WriteLine("\nElige el elemento de tu personaje:\n1. Fuego\n2. Agua\n3. Tierra\n4. Aire\n5. Madera");
+        string elemento = Console.ReadLine();
+        switch (elemento)
+        {
+            case "1":
+                personalizacion.Add("Elemento fuego");
+                break;
+            case "2":
+                personalizacion.Add("Elemento agua");
+                break;
+            case "3":
+                personalizacion.Add("Elemento tierra");
+                break;
+            case "4":
+                personalizacion.Add("Elemento aire");
+                break;
+            case "5":
+                personalizacion.Add("Elemento madera");
+                break;
+            default:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Sistema de elección del tipo de clase del personaje
+        Console.WriteLine("\nElige la clase de tu personaje:\n1. Guerrero\n2. Mago\n3. Arquero\n4. Héroe");
+        string clase = Console.ReadLine();
+        switch (clase)
+        {
+            case "1":
+                personalizacion.Add("Guerrero");
+                break;
+            case "2":
+                personalizacion.Add("Mago");
+                break;
+            case "3":
+                personalizacion.Add("Arquero");
+                break;
+            case "4":
+                personalizacion.Add("Héroe");
+                break;
+            default
+:
+                Console.WriteLine("La opción ingresada no es válida, se ajustará a sin selección");
+                personalizacion.Add("Sin selección");
+                break;
+        }
+        // Imprimir todas las elecciones anteriores
+        Console.WriteLine("\nHa terminado la personalización, ¿listo para jugar?");
+        Console.WriteLine("Resumen de tu personalización:");
+        Console.WriteLine(string.Join(", ", personalizacion));
+    }
+}
+
+
+
+
